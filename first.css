@@ -1,31 +1,79 @@
-body{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 70%;
     height: 100vh;
-    background: grey;
-}
-.container{
+    background: url(images/image.jpg) no-repeat center fixed;
+    background-size: cover;
+  }
+  
+  .container {
+    width: 420px;
+    height: 350px;
+    background: rgba(255, 255, 255, 0.816);
+    color: black;
+    border-radius: 10px;
+    padding: 30px 40px;
+  }
+  
+  h2 {
+    font-size: normal;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  #gradeForm {
     display: block;
-    box-shadow: 5px;
-    background: #fff;
-    font-style: italic;
-}
-#gradeForm{
-    display: block;
-    
-    
-    
     text-align: center;
     cursor: pointer;
-}
-#marksInput{
+  }
+  
+  #marksInput {
     width: 300px;
+    height: 30px;
     font-size: 16px;
-
-}
-
-.input{
+    margin-bottom: 20px;
+    background-color: azure;
+  }
+  
+  button {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 8px;
+    padding-right: 10px;
+    height: 36px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    border-radius: 9px;
+    box-shadow: 7px 7px 7px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:hover {
+    background-color: white;
+    color: black;
+  }
+  
+  button:active {
+    opacity: 0.7;
+  }
+  
+  .input {
     display: none;
-}
+  }
+  
+  #gradeResult {
+    text-align: center;
+    margin-top: 20px;
+    color: brown;
+    font-weight: 700;
+  }
+  
